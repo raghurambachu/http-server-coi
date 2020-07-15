@@ -1,0 +1,292 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* General */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    font-size: 1.1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    display: inline-block;
+}
+
+.active{
+    border-bottom: 2.5px solid #ffc600;
+    
+}
+
+
+/* Clearfix */
+.clearfix:after,
+.clearfix:before{
+    content: "";
+    display: table;
+}
+
+.clearfix:after{
+    clear: both;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+/* Typography */
+h1{
+    font-size: 32px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3,.logo{
+    font-size: 1.2rem;
+}
+
+p{
+    color: rgb(29, 27, 27);
+}
+
+.fd-para{
+    margin-bottom: 0.8rem;
+}
+
+/* Header Section */
+header{
+    padding: 25px 0;
+    background-color: rgb(87, 180, 149);
+    
+}
+
+.logo{
+    float: left;
+}
+
+.nav-menu{
+    float: right;
+    padding: 25px;
+}
+
+.nav-menu a{
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+
+
+article{
+    padding: 45px 0;
+}
+
+.primary{
+    background-color: rgb(212, 231, 229);
+    padding: 35px 0;
+}
+
+
+
+.section-heading{
+    text-align: center;
+}
+
+.just-flex{
+    display: flex;
+}
+
+.col{
+    /* float:left; */
+    width: 50%;
+    
+}
+
+.col-pad-right{
+    padding-right: 35px;
+}
+
+.col-pad-left{
+    padding-left: 35px;
+}
+
+
+.col img{
+    width: 100%;
+}
+
+
+.secondary{
+    background-color: rgb(144, 170, 167);
+    padding: 35px 0;
+}
+
+
+.footer{
+    text-align: center;
+    padding: 25px;
+    font-size: 20px;
+    background-color: lightslategray;
+}
+
+.fd-img{
+    height: 600px;
+    object-fit: cover;
+}
+
+ul{
+    list-style-type: disc;
+    list-style-position:outside ;
+    margin-left: 1.5rem;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.fr-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.fr-center{
+    text-align: center;
+}
+
+@media all and (max-width:1025px){
+    .container{
+        padding: 0rem 2rem;
+    }
+}
+
+@media all and (max-width:800px){
+    .just-flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .col{
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    .col-pad-right{
+        padding-right: 0;
+    }
+
+    .col-pad-left{
+        padding-left: 0;
+    }
+}
+
+
+@media all and (max-width:769px){
+    .nav a{
+        font-size: 0.9rem;
+    }
+    h2{
+        font-size: 1.1rem;
+    }
+}
+
+@media all and (max-width:600px){
+    .nav a{
+        font-size: 0.8rem;
+    }
+    h2{
+        font-size: 0.9rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+}
+
+@media all and (max-width:450px){
+    .nav a{
+        font-size: 0.65rem;
+    }
+    h2{
+        font-size: 0.75rem;
+    }
+    p{
+        font-size: 0.7rem;
+    }
+}
+
+@media all and (max-width:340px){
+    .nav a{
+        font-size: 0.5rem;
+    }
+    h2{
+        font-size: 0.6rem;
+    }
+    p{
+        font-size: 0.6rem;
+    }
+}
